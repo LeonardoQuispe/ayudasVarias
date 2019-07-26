@@ -1,0 +1,2 @@
+sc stop JasperRepServiceControlPagos
+sc delete JasperRepServiceControlPagos
