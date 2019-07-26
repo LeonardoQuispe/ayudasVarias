@@ -1,4 +1,5 @@
------------------------------------INDICACIONES-----------------------------------------
+# INDICACIONES
+
 1. Generar el compilado .jar de tu proyecto Spring Boot (mvn install).
 2. Copiar el compilado .jar que se encuentra en la carpeta raiz/target/**.jar
 3. Pegarlo dentro de la carpeta JasperService y renombrarlo "gs-serving-web-content.jar"
@@ -11,26 +12,28 @@
 
 
 
+# COMANDOS
 
 
------------------------------------COMANDOS---------------------------------------------
-
-
----------------EXPORTAR ARCHIVO .JAR DE SPRING-BOOT-------------------------------------
+## EXPORTAR ARCHIVO .JAR DE SPRING-BOOT
+```bash
 mvn install
 mvn package && java -jar target/gs-spring-boot-0.1.0.jar (OPCIONAL)
+```
 
-
-
----------------INICIAR API REPORTE A PARTIR DE UN COMPILADO .JAR------------------------
+## INICIAR API REPORTE A PARTIR DE UN COMPILADO .JAR
+```bash
 java -jar <jarfilename>.jar
+```
 
-
----------------INICIAR API REPORTE DESDE EL PROYECTO SPRING BOOT------------------------
+## INICIAR API REPORTE DESDE EL PROYECTO SPRING BOOT
+```bash
 mvn spring-boot:run
+```
 
-
----------------CREAR SERVICIO JASPER REPORT---------------------------------------------
+## CREAR SERVICIO JASPER REPORT
+```bash
 sc create JasperReportService binPath= "D:\Escritorio\JASPER\gs-serving-web-content.exe"
 sc start JasperReportService
 sc delete JasperReportService
+```
